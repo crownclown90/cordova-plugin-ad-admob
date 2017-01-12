@@ -53,6 +53,13 @@
 
 		<!-- dependency -->
 		<dependency id="cordova-plugin-ad-admob-sdk" url="https://github.com/cranberrygame/cordova-plugin-ad-admob-sdk" />
+
+    		<preference name="CALENDAR_USAGE_DESCRIPTION" default="Used by network providers" />
+    		<config-file target="*-Info.plist" parent="NSCalendarsUsageDescription">
+      		<string>$CALENDAR_USAGE_DESCRIPTION</string>
+			
+		</config-file>
+		
 	</platform>
 	
     <!-- wp8 -->
